@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Form Elements</title>
+    <style>
+        /* Add some basic styling to make the page look better */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
 
+    <!-- Ordered List -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Object 1</li>
+        <li>Object 2</li>
+        <li>Object 3</li>
+    </ol>
+
+    <!-- External Image From pexels.com -->
+    <h2>Pexels Image</h2>
+    <img src="https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+         alt="Alabama Landscape" width="550" height="350">
+
+    <!-- Contact Table -->
+    <h2>Contact Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Nancy Mwangi</td><td>Riverside Drive</td><td>0707045881</td><td>natashamwangi1@gmail.com</td></tr>
+            <tr><td>Paul Mathenge</td><td>Equator, Nanyuki</td><td>0700345890</td><td>paul.mathenge@gmail.com</td></tr>
+            <tr><td>Joseph Kiptoo</td><td>Umoja 3, Nairobi</td><td>0732809772</td><td>joseph.kiptoo@yahoo.com</td></tr>
+            <tr><td>Esther Wanjiru</td><td>Afya Center</td><td>073408901</td><td>esther.wanjiru@gmail.com</td></tr>
+            <tr><td>Laila Mohamed</td><td>Komarock, Nairobi</td><td>0712453990</td><td>laila.mohamed@outlook.com</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Uganda">Uganda</option>
+        </select><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="writing" name="hobbies" value="writing">
+        <label for="writing">Writing</label>
+
+        <input type="checkbox" id="coding" name="hobbies" value="coding">
+        <label for="coding">Coding</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Audio and Video Elements -->
+    <h2>Audio and Video Elements</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="500">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+</body>
+</html>
